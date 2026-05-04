@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: ["Quran Daily", "Privacy Policy", "Quran App", "Islamic App"],
   authors: [{ name: "Quran Daily" }],
   icons: {
-    icon: "/quran-logo.png",
+    icon: "/quran/quran-logo.png",
   },
   openGraph: {
     title: "Privacy Policy - Quran Daily",
