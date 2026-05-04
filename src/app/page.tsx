@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState, useCallback } from 'react'
+import { usePathname } from 'next/navigation'
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion'
 import {
   Shield,
@@ -506,6 +507,7 @@ function BackToTop() {
 export default function Home() {
   const heroRef = useRef(null)
   const { scrollYProgress } = useScroll()
+  const basePath = '/quran'
   const heroY = useTransform(scrollYProgress, [0, 0.2], [0, -100])
   const heroOpacity = useTransform(scrollYProgress, [0, 0.15], [1, 0])
 
@@ -558,7 +560,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-emerald-500/20 rounded-full blur-2xl scale-150" />
               <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-700 shadow-2xl shadow-emerald-500/30 flex items-center justify-center overflow-hidden">
                 <img
-                  src="/quran-logo.png"
+                  src={`${basePath}quran-logo.png`}
                   alt="Quran Daily"
                   className="w-full h-full object-cover"
                 />
@@ -650,7 +652,7 @@ export default function Home() {
               <div className="flex items-center justify-center gap-2 mb-4">
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center overflow-hidden">
                   <img
-                    src="/quran-logo.png"
+                    src={`${basePath}quran-logo.png`}
                     alt="Quran Daily"
                     className="w-full h-full object-cover"
                   />
