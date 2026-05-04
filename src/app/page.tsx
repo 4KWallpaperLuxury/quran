@@ -131,7 +131,7 @@ const sections: SectionData[] = [
     icon: <Mail className="w-5 h-5" />,
     description:
       'If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.',
-    note: '[Insert Your Support Email Here]',
+    note: 'bookingforjob.dev@gmail.com',
   },
 ]
 
@@ -655,14 +655,14 @@ export default function Home() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <span className="font-bold text-gray-800 dark:text-white">Quran Daily</span>
+                <span className="font-bold text-gray-800 dark:text-white">GUNGSA STUDIO</span>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 We take your privacy seriously. This policy reflects our commitment to transparency
                 and trust.
               </p>
               <p className="text-xs text-gray-400 dark:text-gray-500 mt-4">
-                &copy; {new Date().getFullYear()} Quran Daily. All rights reserved.
+                &copy; {new Date().getFullYear()} Quran Daily by GUNGSA STUDIO. All rights reserved.
               </p>
             </motion.div>
           </div>
